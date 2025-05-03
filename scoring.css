@@ -1,0 +1,362 @@
+body {
+    background: #002366;
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.scoreboard-container {
+    border: 2px solid black;
+    width: 95%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.scoreboard {
+    border: 2px solid white;
+    display: grid;
+    height: 500px;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #001747;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    width: 100%;
+}
+
+.team {
+    border: 2px solid white;
+}
+
+.team h2 {
+    margin-bottom: 10px;
+}
+
+.score {
+    font-size: 9em;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.red { color: red; }
+.yellow { color: gold; }
+.orange { color: orange; }
+
+.foul-tol-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.tol, .fouls {
+    width: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+.foul-tol-counter {
+    display: flex;
+    flex-direction: row;
+    font-size: 5em;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.tol-count, .foul-count {
+    border: 2px solid white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.bonus {
+    font-size: 1.2em;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.team button {
+    font-size: 3em;
+    justify-content: center;
+    height: 60px;
+    width: 70px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clock {
+    border: 2px solid white;
+    width: 100%;
+    font-size: 14em;
+    text-align: center;
+}
+
+.period-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.period {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.periodnum {
+    font-size: 3em;
+}
+
+.period span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.series-score-container {
+    border: 2px solid white;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.series-score {
+    border: 2px solid white;
+    width: 100%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.series-score-counter {
+    border: 2px solid white;
+    font-size: 4em;
+    display: flex;
+    flex-direction: row;
+}
+
+.team-score {
+    border: 2px solid white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.player-info .label {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.player-scores {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+.controls button {
+    font-size: 2em;
+    padding: 10px 20px;
+    border: none;
+    background-color: #004aad;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.players-section {
+    border: 2px solid white;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+}
+
+.players-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.left-team{
+    border: 2px solid white;
+}
+.right-team{
+    border: 2px solid white;
+}
+.players-header{
+    font-size: 4em;
+}
+
+.team-players {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    overflow: auto;
+    padding: 10px 10px;
+}
+
+.player-card {
+    border: 2px solid white;
+    background-color: #001e5f;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 80%;
+    height: 90px;
+}
+.player-card:hover{
+    overflow: auto;
+    transform: scale(1.1);
+}
+.left-player{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right-player{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.right-player .player-name{
+    text-align: end;
+}
+.player-name {
+    width: 80%;
+    text-align: left;
+    padding-right: 10px;
+    font-size: 1.5em;
+}
+
+.player-photo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.player-photo img {
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    .scoreboard {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .scoreboard {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .scoreboard {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+}
+@media (max-width: 1366px) {
+    .scoreboard {
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+}
+.plus-wrapper {
+    position: relative;
+  }
+  
+  .point-options {
+    position: absolute;
+    top: -110px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #004aad;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 100;
+  }
+  
+  .point-options button {
+    font-size: 1.2em;
+    background: white;
+    color: #004aad;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .selectable {
+    outline: 3px solid limegreen;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: glow 1s infinite;
+  }
+  
+  @keyframes glow {
+    0% { outline-color: limegreen; }
+    50% { outline-color: lightgreen; }
+    100% { outline-color: limegreen; }
+  }
+  

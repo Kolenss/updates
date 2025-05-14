@@ -632,4 +632,7 @@ body {
     font-size: 1.2rem;
     z-index: 2;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,8 +1,3 @@
-
-
-
-
-
 // Score tracking
 let scoreA = 0;
 let scoreB = 0;
@@ -161,15 +156,7 @@ function setupPlayerCards() {
 function setupTimerControls() {
   const controlsDiv = document.querySelector('.controls');
   
-  // Create time input field
-  const timeInput = document.createElement('div');
-  timeInput.className = 'time-input';
-  timeInput.innerHTML = `
-    <input type="number" id="minutes" min="0" max="99" value="${minutes}" placeholder="Min">
-    <span>:</span>
-    <input type="number" id="seconds" min="0" max="59" value="${seconds}" placeholder="Sec">
-    <button id="set-time">Set</button>
-  `;
+
   
   // Create play/pause and reset buttons
   const timerButtons = document.createElement('div');

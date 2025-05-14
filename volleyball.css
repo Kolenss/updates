@@ -62,7 +62,7 @@ body {
 .yellow { color: gold; }
 .orange { color: orange; }
 
-.foul-tol-container, .timeout-container {
+.foul-tol-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,16 +71,14 @@ body {
     margin-top: 5px;
 }
 
-.tol, .fouls, .set1, .set2, .set3, .set4, .full-timeout, .half-timeout {
+.tol, .fouls, .set1, .set2, .set3, .set4 {
     width: 50%;
     border: 1px solid white;
     display: flex;
     justify-content: center;
     padding: 2px 0;
 }
-.full-timeout, .half-timeout{
-    font-size: 0.9em;
-}
+
 .foul-tol-counter {
     display: flex;
     flex-direction: row;
@@ -91,7 +89,7 @@ body {
     margin-top: 2px;
 }
 
-.tol-count, .foul-count, .fulltimeout-count, .halftimeout-count {
+.tol-count, .foul-count {
     border: 1px solid white;
     width: 50%;
     display: flex;
